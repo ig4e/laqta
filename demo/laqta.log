@@ -1,0 +1,70 @@
+[2m2026-11-10T22:05:21.541407Z[0m [32m INFO[0m [2mlaqta::wiring[0m[2m:[0m session: X11
+[2m2026-11-10T22:05:21.560371Z[0m [32m INFO[0m [2mlaqta::wiring[0m[2m:[0m UI language [3mlanguage[0m[2m=[0m"en"
+[2m2026-11-10T22:05:21.561369Z[0m [33m WARN[0m [2mcosmic_text::font::system[0m[2m:[0m failed to get system locale, falling back to en-US
+[2m2026-11-10T22:05:21.590576Z[0m [33m WARN[0m [2mlaqta::wiring[0m[2m:[0m hotkey registration failed: key already grabbed by another client [3mchord[0m[2m=[0mPrintScreen
+[2m2026-11-10T22:05:21.590672Z[0m [32m INFO[0m [2mlaqta::wiring[0m[2m:[0m hotkey registered [3mchord[0m[2m=[0mCtrl+PrintScreen
+[2m2026-11-10T22:05:21.590687Z[0m [33m WARN[0m [2mlaqta::wiring[0m[2m:[0m hotkey registration failed: key already grabbed by another client [3mchord[0m[2m=[0mAlt+PrintScreen
+[2m2026-11-10T22:05:21.590699Z[0m [32m INFO[0m [2mlaqta::wiring[0m[2m:[0m hotkey registered [3mchord[0m[2m=[0mShift+PrintScreen
+[2m2026-11-10T22:05:21.590709Z[0m [32m INFO[0m [2mlaqta::wiring[0m[2m:[0m hotkey registered [3mchord[0m[2m=[0mCtrl+Shift+PrintScreen
+[2m2026-11-10T22:05:21.619654Z[0m [33m WARN[0m [2mlaqta::wiring[0m[2m:[0m no tray icon (D-Bus connection error: Failed to connect to address `unix:path=/tmp/laqta-runtime/bus`: No such file or directory (os error 2)); opening the main window
+[2m2026-11-10T22:05:22.402964Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::client[0m[2m:[0m XInput version: 2.4, gesture support: true
+[2m2026-11-10T22:05:22.403205Z[0m [31mERROR[0m [2mgpui_linux::linux::x11::client[0m[2m:[0m Found no xinput mouse pointers.
+[2m2026-11-10T22:05:22.406649Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::client[0m[2m:[0m x11: compositor present: true, gtk_frame_extents_supported: false
+[2m2026-11-10T22:05:22.460684Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::client[0m[2m:[0m Using RandR scale factor: 1
+[2m2026-11-10T22:05:22.480335Z[0m [33m WARN[0m [2mgpui::text_system[0m[2m:[0m failed to load font Font { family: ".SystemUIFont", features: FontFeatures, fallbacks: None, weight: FontWeight(400.0), style: Normal }: requested font family contains no font matching the other parameters: no font found
+[2m2026-11-10T22:05:22.480553Z[0m [32m INFO[0m [2mgpui_component::theme::system_font[0m[2m:[0m UI font ".SystemUIFont" resolves to "Noto Sans", naming it on the theme.
+[2m2026-11-10T22:05:22.484519Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:05:22.484590Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388610
+[2m2026-11-10T22:05:23.130355Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m Found 2 GPU adapter(s):
+[2m2026-11-10T22:05:23.141451Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m   - llvmpipe (LLVM 19.1.7, 256 bits) (vendor=0x10005, device=0x0000, backend=Vulkan, type=Cpu)
+[2m2026-11-10T22:05:23.141480Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m   - llvmpipe (LLVM 19.1.7, 256 bits) (vendor=0x10005, device=0x0000, backend=Gl, type=Cpu)
+[2m2026-11-10T22:05:23.141492Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m Testing adapter: llvmpipe (LLVM 19.1.7, 256 bits) (Vulkan)...
+[2m2026-11-10T22:05:23.237588Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m Selected GPU (passed configuration test): llvmpipe (LLVM 19.1.7, 256 bits) (Vulkan)
+[2m2026-11-10T22:05:23.237791Z[0m [32m INFO[0m [2mgpui_wgpu::wgpu_context[0m[2m:[0m Selected GPU adapter: "llvmpipe (LLVM 19.1.7, 256 bits)" (Vulkan)
+[2m2026-11-10T22:05:23.662626Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m x11: no compositor present, falling back to server-side window decorations
+[2m2026-11-10T22:05:52.781132Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:05:52.781257Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388619
+[2m2026-11-10T22:05:53.049249Z[0m [33m WARN[0m [2mgpui::text_system[0m[2m:[0m failed to load font Font { family: ".SystemUIFont", features: FontFeatures, fallbacks: None, weight: FontWeight(400.0), style: Normal }: requested font family contains no font matching the other parameters: no font found
+[2m2026-11-10T22:05:56.607059Z[0m [33m WARN[0m [2mgpui::text_system[0m[2m:[0m failed to load font Font { family: ".SystemUIFont", features: FontFeatures, fallbacks: None, weight: FontWeight(500.0), style: Normal }: requested font family contains no font matching the other parameters: no font found
+[2m2026-11-10T22:05:57.147450Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:05:57.147545Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388628
+[2m2026-11-10T22:05:57.373175Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m x11: no compositor present, falling back to server-side window decorations
+[2m2026-11-10T22:06:15.092447Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:15.092593Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388633
+[2m2026-11-10T22:06:16.891531Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:16.892308Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388640
+[2m2026-11-10T22:06:18.108451Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:18.108592Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388647
+[2m2026-11-10T22:06:19.013287Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:19.013398Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388654
+[2m2026-11-10T22:06:19.971511Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:19.971601Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388661
+[2m2026-11-10T22:06:21.250845Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:21.250968Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388668
+[2m2026-11-10T22:06:28.404322Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:28.404455Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388675
+[2m2026-11-10T22:06:33.465144Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:33.465312Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388682
+[2m2026-11-10T22:06:41.334641Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:41.334778Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388689
+[2m2026-11-10T22:06:50.451393Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:50.451629Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388696
+[2m2026-11-10T22:06:50.959996Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:50.960160Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388703
+[2m2026-11-10T22:06:57.619128Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:06:57.619335Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388710
+[2m2026-11-10T22:07:03.406689Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:07:03.406775Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388717
+[2m2026-11-10T22:07:10.261910Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:07:10.262039Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388724
+[2m2026-11-10T22:07:17.320488Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:07:17.320597Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388731
+[2m2026-11-10T22:07:22.517380Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:07:22.517568Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388738
+[2m2026-11-10T22:07:22.748503Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m x11: no compositor present, falling back to server-side window decorations
+[2m2026-11-10T22:08:11.624588Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:08:11.624739Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388747
+[2m2026-11-10T22:11:04.932188Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:11:04.932295Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388756
+[2m2026-11-10T22:12:29.995412Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Using Visual { id: 64, colormap: 0, depth: 32 }
+[2m2026-11-10T22:12:29.995541Z[0m [32m INFO[0m [2mgpui_linux::linux::x11::window[0m[2m:[0m Creating colormap 8388761

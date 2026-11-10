@@ -1,0 +1,389 @@
+   Compiling laqta-app v0.1.0 (/src/crates/laqta-app)
+    Finished `test` profile [unoptimized] target(s) in 14.56s
+     Running unittests src/lib.rs (/target/debug/deps/laqta_app-aa58f1e9ef5375b7)
+
+running 86 tests
+test dispatcher::tests::default_leaves_the_configured_steps_alone ... ok
+test dispatcher::tests::each_toolbar_action_replaces_the_configured_steps ... ok
+test dispatcher::tests::edit_adds_the_editor_to_the_configured_steps ... ok
+test effects::tests::asset_paths_are_the_enabled_named_ones_once ... ok
+test files::tests::first_free_skips_existing_names ... ok
+test images::tests::copy_image_reaches_the_clipboard_port ... ok
+test files::tests::files_under_passes_files_and_missing_paths_through ... ok
+test files::tests::files_under_expands_folders_recursively_in_sorted_order ... ok
+test files::tests::files_under_skips_links_to_folders_and_keeps_links_to_files ... ok
+test files::tests::read_prefix_stops_at_the_limit ... ok
+test files::tests::every_function_runs_its_work_through_run_blocking ... ok
+test files::tests::save_atomic_leaves_no_part_file_when_rename_fails ... ok
+test recording::drive::tests::the_kept_intermediate_is_the_output_name_plus_mkv ... ok
+test region::layout::tests::an_accessibility_element_wins_over_the_same_pixel_region ... ok
+test region::layout::tests::regions_go_before_their_window_smallest_first ... ok
+test region::layout::tests::window_rects_are_given_in_image_coordinates ... ok
+test files::tests::save_atomic_writes_the_file ... ok
+test region::layout::tests::regions_under_a_front_window_are_dropped ... ok
+test files::tests::first_free_fails_when_every_candidate_is_taken ... ok
+test files::tests::chunks_read_back_the_whole_file ... ok
+test images::tests::thumbnail_file_keeps_an_image_that_already_fits ... ok
+test files::tests::walk_lists_folders_first_with_depth_and_skips_hidden ... ok
+test files::tests::save_atomic_leaves_no_part_file_when_parent_is_a_file ... ok
+test images::tests::decode_file_round_trips_a_png ... ok
+test images::tests::missing_file_is_an_io_error ... ok
+test region::tests::a_dragged_region_stays_selected_until_finish_and_carries_the_action ... ok
+test region::tests::a_slow_recogniser_shows_reading_and_escape_does_not_wait_for_it ... ok
+test region::tests::a_recogniser_that_is_not_ready_ends_the_selection_as_copy_text ... ok
+test region::tests::an_annotated_crop_does_not_change_a_session_that_ends_without_a_selection ... ok
+test region::tests::an_annotated_crop_is_dropped_when_the_selection_changes ... ok
+test region::tests::a_failed_read_and_an_empty_one_are_shown_and_copy_nothing ... ok
+test region::tests::cancel_after_selecting_closes_the_overlay ... ok
+test region::tests::a_text_session_reads_each_selection_and_ends_when_closed ... ok
+test region::tests::an_answer_for_a_selection_that_is_gone_is_dropped ... ok
+test region::tests::click_on_a_window_target_returns_that_window ... ok
+test region::tests::a_session_that_confirms_on_select_never_sends_a_selection_image ... ok
+test region::tests::crop_frames_single_rect_on_the_second_monitor ... ok
+test region::tests::enter_on_a_selected_region_confirms_it_with_the_default_action ... ok
+test region::tests::drag_on_the_second_monitor_crops_the_second_frame ... ok
+test region::tests::an_annotated_crop_replaces_the_plain_crop ... ok
+test region::tests::escape_cancels_the_selection ... ok
+test region::tests::crop_frames_clears_the_gap_between_two_rects ... ok
+test region::tests::closing_the_text_goes_back_to_the_selection_which_can_still_be_captured ... ok
+test region::tests::multi_region_enter_keeps_both_rects_with_a_transparent_gap ... ok
+test region::tests::middle_click_with_the_active_monitor_action_returns_the_monitor_under_the_cursor ... ok
+test region::tests::overlay_show_error_is_returned_before_targets_are_asked_for ... ok
+test region::tests::moves_repaint_the_overlay ... ok
+test region::tests::the_latest_annotated_crop_wins ... ok
+test region::tests::select_future_is_send ... ok
+test region::tests::the_selection_image_is_sent_once_per_distinct_selected_rect ... ok
+test region::tests::right_click_with_the_fullscreen_action_returns_the_whole_desktop ... ok
+test region::tests::the_first_view_is_shown_before_the_targets_load ... ok
+test region::tests::the_first_views_pixel_matches_the_composite_everywhere ... ok
+test region::tests::the_text_button_reads_the_selection_in_place_and_copies_all_of_it ... ok
+test task::run::preset_tests::random_preset_uses_the_roll ... ok
+test region::tests::the_text_follows_the_selection ... ok
+test region::tests::the_text_window_takes_what_was_read_and_ends_the_session ... ok
+test region::tests::unsupported_hover_source_still_allows_a_drag ... ok
+test task::tests::delete_file_after_stop ... ok
+test region::tests::view_carries_the_selection_the_tools_and_the_lock ... ok
+test region::tests::region_detection_can_be_turned_off ... ok
+test region::tests::view_carries_the_magnifier_and_info_text_only_when_enabled ... ok
+test task::upload::tests::files_go_to_the_destination_for_their_kind ... ok
+test task::upload::tests::mime_comes_from_the_extension ... ok
+test task::tests::stop_running ... ok
+test task::tests::stop_all ... ok
+test task::upload::tests::progress_reports_the_first_value_then_each_percent ... ok
+test task::tests::stop_queued ... ok
+test task::upload::tests::progress_with_unknown_total_steps_by_64_kib ... ok
+test task::upload::tests::retries_wait_one_then_three_seconds ... ok
+test region::tests::a_click_inside_a_window_takes_the_region_under_it ... ok
+test tools::hash::tests::text_digests_match_the_standard_vectors ... ok
+test task::tests::stop_after_save ... ok
+test task::tests::window_pattern ... ok
+test task::tests::region_image ... ok
+test watch::tests::empty_filter_matches_everything ... ok
+test tools::hash::tests::compare_ignores_case_and_spaces ... ok
+test watch::tests::any_of_several_patterns_matches ... ok
+test tools::indexer::tests::options_drop_files_and_sizes ... ok
+test tools::indexer::tests::the_tree_follows_the_depths ... ok
+test tools::indexer::tests::xml_escapes_names ... ok
+test watch::tests::star_and_question_mark_are_wildcards ... ok
+test tools::hash::tests::every_kind_gives_lower_hex_of_its_width ... ok
+test watch::tests::matching_ignores_case ... ok
+test tools::indexer::tests::html_escapes_names_and_title ... ok
+test images::tests::thumbnail_file_fits_the_side_and_keeps_the_aspect ... ok
+
+test result: ok. 86 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.62s
+
+     Running tests/ai.rs (/target/debug/deps/ai-cbf83e9255095502)
+
+running 15 tests
+test analyze_passes_the_prompt_and_returns_the_answer ... ok
+test erase_passes_the_image_and_mask_to_the_inpainter ... ok
+test a_use_case_calls_its_port_only_when_polled ... ok
+test port_errors_become_app_errors ... ok
+test recognize_text_returns_the_ocr_result_and_does_nothing_else ... ok
+test a_use_case_future_owns_what_it_needs ... ok
+test remove_background_returns_the_cut_image ... ok
+test show_ocr_defaults_to_the_text_window ... ok
+test show_ocr_on_a_host_without_text_windows_is_unsupported ... ok
+test the_ocr_route_copies_the_words_the_user_picked ... ok
+test the_ocr_route_of_a_recogniser_that_is_not_ready_shows_an_empty_result_without_touching_the_clipboard ... ok
+test the_ocr_route_of_a_recogniser_that_is_not_ready_shows_the_result_window_and_copies_the_text ... ok
+test the_ocr_route_opens_the_text_window_when_asked ... ok
+test the_ocr_route_reads_the_text_in_place_and_copies_it ... ok
+test the_ocr_route_shows_a_failed_recognition_on_the_overlay ... ok
+
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/audit_arch.rs (/target/debug/deps/audit_arch-ab02c93ac314e6ba)
+
+running 1 test
+test audit_bug_tool_route_not_unwind_guarded ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/audit_capture.rs (/target/debug/deps/audit_capture-f24d83184fcef652)
+
+running 4 tests
+test audit_bug_beautify_runs_after_annotate ... ignored, known issue, not fixed yet
+test audit_bug_copy_file_and_path_are_exclusive ... ignored, known issue, not fixed yet
+test audit_bug_custom_window_matches_a_ui_element ... ignored, known issue, not fixed yet
+test audit_bug_print_needs_no_saved_file ... ignored, known issue, not fixed yet
+
+test result: ok. 0 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/auto_capture.rs (/target/debug/deps/auto_capture-466a92e3c298cd7d)
+
+running 9 tests
+test auto_capture_refuses_to_capture_its_own_actions ... ok
+test auto_capture_cancelled_run_ends_the_loop_even_without_a_count ... ok
+test auto_capture_failed_runs_are_skipped_and_the_loop_goes_on ... ok
+test auto_capture_start_while_running_is_a_no_op ... ok
+test auto_capture_stopped_before_its_first_run_never_captures ... ok
+test auto_capture_stop_action_ends_the_loop_during_its_wait ... ok
+test auto_capture_runs_count_times_and_frees_the_slot ... ok
+test auto_capture_toggle_starts_then_stops_then_starts_again ... ok
+test auto_capture_waits_at_least_one_second_between_runs ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/dispatcher.rs (/target/debug/deps/dispatcher-0c148430e31b1152)
+
+running 6 tests
+test capture_failure_is_returned_with_no_events_and_no_task_id_used ... ok
+test exit_returns_exit_without_side_effects ... ok
+test open_screenshots_folder_creates_the_folder_and_opens_it ... ok
+test open_screenshots_folder_reports_io_error_and_opens_nothing ... ok
+test print_screen_submits_a_capture_and_reports_in_queue_at_once ... ok
+test settings_returns_the_settings_given_to_new ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/dispatcher_m1.rs (/target/debug/deps/dispatcher_m1-d1cdb2c286db8d12)
+
+running 18 tests
+test active_monitor_takes_the_monitor_under_the_window ... ok
+test active_window_crops_to_the_window ... ok
+test region_then_last_region ... ok
+test custom_window_matches_title ... ok
+test disable_hotkeys_toggles ... ok
+test transparent_active_window_falls_back_to_the_crop_when_unsupported ... ok
+test pins_and_highlighter ... ok
+test the_annotated_crop_is_the_captured_image ... ok
+test region_cancel_is_cancelled ... ok
+test transparent_active_window_saves_the_window_bitmap ... ok
+test transparent_custom_window_saves_the_window_bitmap ... ok
+test custom_region_and_missing_custom_region ... ok
+test tool_actions_open_their_windows ... ok
+test workflow_settings_apply ... ok
+test window_bitmap_is_ignored_when_transparent_is_off ... ok
+test windows_open_through_the_tool_host ... ok
+test a_selected_region_runs_only_the_steps_of_the_toolbar_action ... ok
+test every_action_routes ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running tests/dispatcher_m2.rs (/target/debug/deps/dispatcher_m2-c5fd587805b43d26)
+
+running 25 tests
+test dispatch_with_a_url_downloads_it_and_shortens_it_without_asking ... ok
+test clipboard_upload_of_a_url_downloads_and_uploads_it ... ok
+test file_upload_asks_for_a_path_and_uploads_that_file ... ok
+test dispatch_with_files_uploads_them_and_asks_for_nothing ... ok
+test clipboard_upload_of_an_image_is_a_capture_with_the_upload_flag ... ok
+test clipboard_upload_of_files_submits_one_job_per_file ... ok
+test file_upload_with_no_path_is_unsupported ... ok
+test folder_upload_of_more_than_ten_files_is_confirmed_then_submitted ... ok
+test dispatch_with_several_files_returns_every_task ... ok
+test folder_upload_submits_one_file_job_per_file_in_the_folder ... ok
+test clipboard_upload_with_an_empty_clipboard_is_unsupported ... ok
+test file_upload_cancelled_in_the_picker_submits_nothing ... ok
+test shorten_url_asks_when_the_clipboard_holds_no_url ... ok
+test upload_text_asks_when_the_clipboard_has_no_text ... ok
+test shorten_url_uses_the_clipboard_url_when_there_is_one ... ok
+test file_upload_uploads_each_picked_file ... ok
+test dispatch_with_text_uploads_it_instead_of_the_clipboard ... ok
+test upload_of_more_than_ten_files_asks_first_and_submits_nothing_when_declined ... ok
+test folder_upload_of_an_empty_folder_is_unsupported ... ok
+test upload_url_asks_for_the_url_and_uploads_the_download ... ok
+test clipboard_upload_of_text_is_a_text_upload ... ok
+test upload_text_sends_the_clipboard_text ... ok
+test upload_url_rejects_text_that_is_not_a_url ... ok
+test upload_text_with_nothing_to_send_is_unsupported ... ok
+test upload_of_ten_files_does_not_ask ... ok
+
+test result: ok. 25 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/dispatcher_m3.rs (/target/debug/deps/dispatcher_m3-2220c4160cf1003c)
+
+running 3 tests
+test image_beautifier_cancelled_in_the_picker_submits_nothing ... ok
+test editor_effects_and_drag_drop_open_their_windows ... ok
+test image_beautifier_saves_and_copies_the_beautified_picture ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/history.rs (/target/debug/deps/history-3f4748f0e205732a)
+
+running 3 tests
+test a_failed_edit_comes_back_as_an_app_error ... ok
+test tags_and_deletes_reach_the_history_on_the_blocking_pool ... ok
+test without_a_history_the_edits_are_unsupported ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/recording.rs (/target/debug/deps/recording-192c4619ee6cace7)
+
+running 24 tests
+test an_unsupported_active_window_reports_a_failure_and_a_toast ... ok
+test control_actions_with_nothing_running_are_done ... ok
+test a_failed_stream_open_reports_a_failure_and_a_toast ... ok
+test a_cancelled_portal_after_the_countdown_ends_with_cancelled_and_no_toast ... ok
+test gif_routes_use_the_gif_codec ... ok
+test drawn_region_starts_with_an_even_size ... ok
+test missing_custom_region_is_unsupported ... ok
+test custom_region_starts_with_an_even_size ... ok
+test abort_reports_cancelled_and_hands_nothing_to_task ... ok
+test an_unnamed_camera_is_the_first_one_the_stream_lists ... ok
+test countdown_emits_one_event_per_second ... ok
+test crashed_encoder_reports_failure_with_the_partial_file ... ok
+test fixed_duration_stops_by_itself ... ok
+test highlighter_is_on_only_while_recording ... ok
+test second_start_stops_the_running_recording ... ok
+test active_window_records_the_window_rect ... ok
+test pause_action_toggles_pause_and_resume ... ok
+test last_recording_area_is_reused_without_asking ... ok
+test stop_hands_the_file_to_task ... ok
+test saved_file_runs_copy_and_reveal_steps ... ok
+test stop_while_the_area_is_drawn_closes_the_overlay_and_records_nothing ... ok
+test pause_and_resume_pass_through_to_the_encoder ... ok
+test stop_while_the_encoder_starts_saves_nothing ... ok
+test stop_abort_and_a_second_start_each_cancel_a_stream_that_never_opens ... ok
+
+test result: ok. 24 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/scrolling.rs (/target/debug/deps/scrolling-793968c0d9e4d9f8)
+
+running 6 tests
+test scrolling_a_scroll_past_the_overlap_stops_and_keeps_the_seam ... ok
+test scrolling_a_page_that_stays_put_stops_after_two_unchanged_frames ... ok
+test scrolling_cancelling_the_selection_captures_nothing ... ok
+test scrolling_a_window_that_refuses_scroll_input_is_captured_by_hand ... ok
+test scrolling_max_frames_caps_the_capture ... ok
+test scrolling_stitches_the_page_until_it_stops_moving ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/task_golden.rs (/target/debug/deps/task_golden-6c88a350dbf4a88a)
+
+running 50 tests
+test after_capture_window_changes_flags ... ok
+test after_capture_window_cancel_stops_the_job ... ok
+test beautify ... ok
+test auto_jpeg ... ok
+test annotate_cancelled_keeps_original ... ok
+test clipboard_fails ... ok
+test before_upload_cancel_skips_the_upload ... ok
+test annotate ... ok
+test capture_ok ... ok
+test before_upload_choice ... ok
+test delete_file ... ok
+test copy_path ... ok
+test concurrency ... ok
+test folder_path_and_print ... ok
+test file_job ... ok
+test copy_file ... ok
+test effects_preset ... ok
+test open_in_photo_editor ... ok
+test name_collision ... ok
+test jpeg_format ... ok
+test effects_missing_preset_is_a_step_failure ... ok
+test no_toast ... ok
+test missing_destination ... ok
+test file_exists_skip ... ok
+test file_exists_overwrite ... ok
+test large_file_declined ... ok
+test delete_file_after_failed_upload ... ok
+test perform_action ... ok
+test save_fails ... ok
+test pin_qr_ocr ... ok
+test remove_background_and_analyze ... ok
+test save_with_dialog ... ok
+test selection_action_copy ... ok
+test quick_menu_cancel ... ok
+test panic_isolated ... ok
+test quick_menu_save ... ok
+test thumbnail ... ok
+test perform_action_output_is_uploaded_as_its_kind ... ok
+test text_job ... ok
+test perform_action_output_replaces_the_file ... ok
+test saved_recording ... ok
+test upload_ok ... ok
+test reveal ... ok
+test upload_auth_fails_no_retry ... ok
+test url_job ... ok
+test shorten_url_job ... ok
+test upload_retry_then_ok ... ok
+test upload_fails_after_retries ... ok
+test upload_shorten_and_open ... ok
+test upload_no_url_skips_after_upload ... ok
+
+test result: ok. 50 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/tools.rs (/target/debug/deps/tools-44918a834bd981e3)
+
+running 29 tests
+test colour_formats_of_a_known_colour ... ok
+test colour_history_keeps_the_newest_32_colours_once_each ... ok
+test combine_joins_images_and_refuses_an_input_as_output ... ok
+test colour_formats_of_the_edges ... ok
+test convert_writes_new_files_and_never_overwrites_the_input ... ok
+test ruler_converts_pixels_at_a_dpi ... ok
+test ruler_measures_the_span_of_two_points ... ok
+test html_index_is_a_nested_list_with_a_title ... ok
+test parse_reads_short_forms_alpha_names_and_rejects_the_rest ... ok
+test text_digests_match_the_standard_vectors ... ok
+test compare_counts_changed_pixels ... ok
+test ocr_returns_the_recognised_lines ... ok
+test video_thumbnails_take_evenly_spaced_frames ... ok
+test metadata_of_an_image_is_its_exif_and_of_other_files_is_probed ... ok
+test video_thumbnails_need_a_duration ... ok
+test json_index_is_a_nested_object ... ok
+test strip_removes_text_chunks_from_a_png ... ok
+test icon_writes_one_entry_per_size ... ok
+test qr_codes_round_trip_through_images_files_and_the_screen ... ok
+test window_toggles_flip_and_remember_their_state ... ok
+test window_tools_need_an_active_window ... ok
+test split_writes_numbered_tiles_in_the_input_format ... ok
+test video_wrappers_send_the_specs_they_choose ... ok
+test watermark_draws_the_mark_over_each_image ... ok
+test text_index_is_an_indented_tree_with_sizes ... ok
+test resize_and_thumbnail_scale_into_named_outputs ... ok
+test xml_index_escapes_names ... ok
+test parse_reads_every_format_the_picker_writes ... ok
+test file_digests_match_text_digests_across_chunks ... ok
+
+test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+     Running tests/watch.rs (/target/debug/deps/watch-b1e59f091b529f8c)
+
+running 12 tests
+test watch_folders_deliver_through_dispatch ... ok
+test watch_move_into_its_own_folder_leaves_the_file_where_it_is ... ok
+test watch_uploads_matching_files_and_skips_the_rest ... ok
+test watch_restart_replaces_the_watches_and_skips_disabled_and_empty_folders ... ok
+test watch_filter_takes_any_pattern_and_ignores_case ... ok
+test watch_folder_that_cannot_be_watched_is_skipped_and_the_rest_still_watch ... ok
+test watch_file_that_cannot_be_moved_is_not_uploaded ... ok
+test watch_callbacks_do_not_keep_the_app_alive ... ok
+test watch_empty_filter_takes_every_file ... ok
+test watch_move_puts_the_file_in_the_screenshots_folder_and_uploads_it_there ... ok
+test watch_move_takes_the_next_free_name ... ok
+test watch_passes_the_include_subfolders_flag_to_the_watcher ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+   Doc-tests laqta_app
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
